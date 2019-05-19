@@ -1,18 +1,38 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NgDatepickerModule } from 'ng2-datepicker';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './layouts/header/header.component';
+import { FooterComponent } from './layouts/footer/footer.component';
+
+import { HomeComponent } from './screens/home/home.component';
+import { ContactComponent } from './screens/contact/contact.component';
+import { KdriveComponent } from './screens/kdrive/kdrive.component';
+import { AvisComponent } from './screens/avis/avis.component';
+import { DevisComponent } from './screens/devis/devis.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    FooterComponent,
+    HomeComponent,
+    ContactComponent,
+    KdriveComponent,
+    AvisComponent,
+    DevisComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    FormsModule,
+    ReactiveFormsModule,
+    AppRoutingModule,
+    NgDatepickerModule,
   ],
-  providers: [],
+  providers: [FormsModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,0 +1,263 @@
+<!-- start banner Area -->
+<section class="banner-area relative" id="home">
+  <div class="overlay overlay-bg"></div>
+  <div class="container">
+    <div class="row d-flex align-items-center justify-content-between" style="height: 100vh;">
+      <div class="banner-content col-lg-6 col-md-6 ">
+        <h6 class="text-white ">Evitez les heures de pointe et les bouchons ? <br />Commandez un Taxi KDrive !</h6>
+        <h1 class="text-uppercase">
+          07 66 10 23 78
+        </h1>
+        <p class="pt-10 pb-10 text-white">
+          Un avion à prendre ? Une réunion à ne pas manquer ? Un rendez-vous important ? Choisissez un Taxi Moto pour
+          vous y rendre en toute sécurité.
+        </p>
+        <a href="tel:0766102378" class="primary-btn">Appeler un Taxi KDrive</a>
+      </div>
+      <div class="col-lg-4  col-md-6 header-right">
+        <h4 class="pb-30">Réserver un Taxi KDrive</h4>
+        <form class="form">
+          <div class="form-group">
+            <input class="form-control txt-field" type="text" name="name" placeholder="Nom">
+            <input class="form-control txt-field" type="email" name="email" placeholder="Email">
+            <input class="form-control txt-field" type="tel" name="phone" placeholder="Téléphone">
+          </div>
+          <div class="form-group">
+            <div class="default-select" id="default-select">
+              <select>
+                <option value="" disabled selected hidden>D'où partez vous ?</option>
+                <option value="1">Paris</option>
+                <option value="2">La Défense</option>
+                <option value="3">Roissy</option>
+                <option value="4">Orly</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="default-select" id="default-select2">
+              <select>
+                <option value="" disabled selected hidden>Où allez vous ?</option>
+                <option value="1">Paris</option>
+                <option value="2">La Défense</option>
+                <option value="3">Roissy</option>
+                <option value="4">Orly</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="input-group dates-wrap">
+              <ng-datepicker class="dates form-control" name="date" [(ngModel)]="date" [options]="options">
+              </ng-datepicker>
+              <div class="input-group-prepend">
+                <span class="input-group-text"><span class="lnr lnr-calendar-full"></span></span>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <input class="form-control txt-field" type="text" name="hour" placeholder="A quelle heure ?">
+          </div>
+          <div class="form-group">
+            <textarea class="form-control txt-field" name="description" id="" cols="10" rows="3"
+              placeholder="Détails"></textarea>
+          </div>
+          <div class="form-group">
+
+            <button class="btn btn-default btn-lg btn-block text-center text-uppercase">Réserver un Taxi KDrive</button>
+
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End banner Area -->
+
+<!-- Start home-about Area -->
+<section class="home-about-area section-gap">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 about-left">
+        <img class="img-fluid" src="assets/img/about-img.jpg" alt="">
+      </div>
+      <div class="col-lg-6 about-right">
+        <h1>Nos Taxis KDrive</h1>
+        <h4>Toutes nos motos suréquipées pour votre confort et votre sécurité</h4>
+        <p>Nos Taxis KDrive vous transportent à bord de motos Honda goldwing 1800cc afin de garantir un confort et une
+          sécurité pour votre trajet. Votre sécurité passe avant tout, et nous vous garantissons un transport sûr,
+          rapide et confortable. Les équipements proposés conjugués à un style de conduite souple par nos chauffeurs de
+          taxi moto, permettent de complètement sécuriser votre transport.
+        </p>
+        <a class="text-uppercase primary-btn" routerLink="/kdrive">En savoir plus</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End home-about Area -->
+
+<!-- Start services Area -->
+<section class="services-area pb-50">
+  <div class="container">
+    <div class="row section-title">
+      <h1>Nos services</h1>
+      <p>Les services que nous proposons répond à tous les besoins dont vous nous faites part.</p>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 single-service">
+        <span class="lnr lnr-briefcase"></span>
+        <a href="#">
+          <h4>J'ai un rendez-vous d'affaire à 9h30 au coeur de Paris</h4>
+        </a>
+        <p>
+          Vous avez un rendez-vous d'affaire à Paris ? Assurez-vous d'arriver à l'heure aux heures de pointe en toute
+          sécurité et sans stress.
+        </p>
+      </div>
+      <div class="col-lg-4 single-service">
+        <span class="lnr lnr-rocket"></span>
+        <a href="#">
+          <h4>J'ai mon avion à 10h à Roissy</h4>
+        </a>
+        <p>
+          Le trafic en direction des aéroports est très souvent chargé à Paris. Nos chauffeurs maîtrisent leur moto taxi
+          comme personne pour vous emmener au plus vite à Orly ou Roissy en toute sécurité.
+        </p>
+      </div>
+      <div class="col-lg-4 single-service">
+        <span class="lnr lnr-bus"></span>
+        <a href="#">
+          <h4>J'ai un train à prendre dans 2h à la Gare de Lyon</h4>
+        </a>
+        <p>
+          Vous avez un train à prendre dans une gare parisienne ? Pour être certain de ne pas le rater, faites confiance
+          à notre équipe et évitez le trafic Parisien aux heures de pointe.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End services Area -->
+
+<!-- Start reviews Area -->
+<section class="reviews-area section-gap">
+  <div class="container">
+    <div class="row section-title">
+      <h1>Avis clients</h1>
+      <p>Ils ont souhaités nous faire part de leur retour d'expérience.</p>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-6">
+        <div class="single-review">
+          <h4>Tom Ford</h4>
+          <p>
+            Je suis très satisfait de la prestation du taxi KDrive que j'ai pris !
+          </p>
+          <div class="star">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="single-review">
+          <h4>Marc Jacobs</h4>
+          <p>
+            Je pensais être en retard à un rendez-vous très important mais grâce à votre Taxi Kdrive je suis arrivé à
+            l'heure.
+          </p>
+          <div class="star">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="single-review">
+          <h4>Louis Vuitton</h4>
+          <p>
+            J'avais un avion à prendre à 10h et voyant le trafic qui était au rouge en direction des aéroports, j'ai
+            fait appel à vos services en espérant arriver à l'heure et ce fut le cas. Encore Merci !
+          </p>
+          <div class="star">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="single-review">
+          <h4>Christian Louboutin</h4>
+          <p>
+            J'avais beaucoup d'appréhension au début car j'ai très peur en moto, mais votre chauffeur a su me rassurer
+            et la route fut un plaisir et vos motos très confortables Un grand merci à vous !
+          </p>
+          <div class="star">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="single-review">
+          <h4>Karl Lagarfeld</h4>
+          <p>
+            Chauffeur ponctuel, agréable et très rassurant au volant. Merci !
+          </p>
+          <div class="star">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <div class="single-review">
+          <h4>Yves Saint Laurent</h4>
+          <p>
+            Quel plaisir de prendre vos Taxi Kdrive, pour éviter le trafic parisien c'est la solution parfaite !
+          </p>
+          <div class="star">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End reviews Area -->
+
+<!-- Start home-calltoaction Area -->
+<section class="home-calltoaction-area relative">
+  <div class="container">
+    <div class="overlay overlay-bg"></div>
+    <div class="row align-items-center section-avis">
+      <div class="col-lg-8">
+        <h1>Vous avez pris un Taxi KDrive ? Laissez nous votre avis !</h1>
+        <p>
+          Satisfait ou non de notre service, nous souhaitons avoir votre avis afin de les partager sur notre site.
+        </p>
+      </div>
+      <div class="col-lg-4 btn-left">
+        <a routerLink="/avis" class="primary-btn">Laissez un avis</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End home-calltoaction Area -->

@@ -1,0 +1,22 @@
+.footer-area h6 {
+  color: #fff !important;
+  margin-bottom: 25px;
+  font-size: 18px !important;
+  font-weight: 600 !important;
+}
+
+@media (max-width: 480px) {
+  .footer-area {
+    text-align: center;
+
+    .footer-social {
+      text-align: center;
+      flex-direction: row;
+      justify-content: center;
+
+      a {
+        padding: 0 20px;
+      }
+    }
+  }
+}

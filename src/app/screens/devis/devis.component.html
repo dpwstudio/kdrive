@@ -1,0 +1,83 @@
+<!-- start banner Area -->
+<section class="banner-area relative about-banner" id="home">
+    <div class="overlay overlay-bg"></div>
+    <div class="container">
+      <div class="row d-flex align-items-center justify-content-center">
+        <div class="about-content col-lg-12">
+          <h1 class="text-white">
+            Devis
+          </h1>
+          <p class="text-white link-nav"><a routerLink="/">Home </a> <span class="lnr lnr-arrow-right"></span> <a
+              routerLink="/devis"> Devis</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End banner Area -->
+  
+  <!-- Start contact-page Area -->
+  <section class="contact-page-area section-gap">
+    <div class="container">
+      <div class="row section-title">
+        <h1>Demander un devis</h1>
+        <p>Vous avez une demande précise sur un trajet, demandez un devis gratuitement via notre formulaire.</p>
+      </div>
+      <div class="row">
+        <div class="col-lg-5  col-md-6 header-right">
+          <h4 class="pb-30">Je demande un devis !</h4>
+          <form class="form">
+            <div class="form-group">
+              <input class="form-control txt-field" type="text" name="name" placeholder="Nom"/>
+              <input class="form-control txt-field" type="email" name="email" placeholder="Email"/>
+              <input class="form-control txt-field" type="tel" name="phone" placeholder="Téléphone"/>
+            </div>
+            <div class="form-group">
+              <div class="default-select" id="default-select">
+                <select>
+                  <option value="" disabled selected hidden>D'où partez vous ?</option>
+                  <option value="1">Paris</option>
+                  <option value="2">La Défense</option>
+                  <option value="3">Roissy</option>
+                  <option value="4">Orly</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="default-select" id="default-select2">
+                <select>
+                  <option value="" disabled selected hidden>Où allez vous ?</option>
+                  <option value="1">Paris</option>
+                  <option value="2">La Défense</option>
+                  <option value="3">Roissy</option>
+                  <option value="4">Orly</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group dates-wrap">
+                <ng-datepicker class="dates form-control" name="date" [(ngModel)]="date" [options]="options">
+                </ng-datepicker>
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><span class="lnr lnr-calendar-full"></span></span>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <input class="form-control txt-field" type="text" name="hour" placeholder="A quelle heure ?"/>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control txt-field" name="description" id="" cols="10" rows="3"
+                placeholder="Détails"></textarea>
+            </div>
+            <div class="form-group">
+  
+              <button class="btn btn-default btn-lg btn-block text-center text-uppercase">Envoyer</button>
+  
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End contact-page Area -->
+  

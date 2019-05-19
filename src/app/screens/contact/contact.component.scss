@@ -1,0 +1,21 @@
+.common-input {
+  border: 1px solid #ced4da !important;
+}
+
+button:disabled {
+  background-color: #eee;
+  color: #aaa;
+  cursor: auto;
+
+}
+
+.ng-valid[required],
+.ng-valid.required {
+  border-left: 5px solid #42A948 !important;
+  /* green */
+}
+
+.ng-invalid:not(form) {
+  border-left: 5px solid #f9d700 !important;
+  /* red */
+}

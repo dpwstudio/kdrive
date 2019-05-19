@@ -1,0 +1,82 @@
+<!-- start banner Area -->
+<section class="banner-area relative about-banner" id="home">
+  <div class="overlay overlay-bg"></div>
+  <div class="container">
+    <div class="row d-flex align-items-center justify-content-center">
+      <div class="about-content col-lg-12">
+        <h1 class="text-white">
+          Contact
+        </h1>
+        <p class="text-white link-nav"><a href="index.html">Home </a> <span class="lnr lnr-arrow-right"></span> <a
+            href="contact.html"> Contact</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End banner Area -->
+
+<!-- Start contact-page Area -->
+<section class="contact-page-area section-gap">
+  <div class="container">
+    <div class="row">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2621.556113388451!2d2.2900772156767255!3d48.923848779294026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66f5b41d4faa3%3A0xc02914b5b71c5eda!2s15+Rue+Julien+Mocquard%2C+92230+Gennevilliers!5e0!3m2!1sfr!2sfr!4v1557954081312!5m2!1sfr!2sfr"
+        width="100%" height="445px;" frameborder="0" style="border:0; margin-bottom: 5em;" allowfullscreen></iframe>
+      <div class="col-lg-4 d-flex flex-column address-wrap">
+        <div class="single-contact-address d-flex flex-row">
+          <div class="icon">
+            <span class="lnr lnr-home"></span>
+          </div>
+          <div class="contact-details">
+            <h5>Gennevilliers, France</h5>
+            <p>
+              15 rue Julien Mocquard
+            </p>
+          </div>
+        </div>
+        <div class="single-contact-address d-flex flex-row">
+          <div class="icon">
+            <span class="lnr lnr-phone-handset"></span>
+          </div>
+          <div class="contact-details">
+            <h5>07 66 10 23 78</h5>
+            <p>7j/7 24h/24</p>
+          </div>
+        </div>
+        <div class="single-contact-address d-flex flex-row">
+          <div class="icon">
+            <span class="lnr lnr-envelope"></span>
+          </div>
+          <div class="contact-details">
+            <h5>contact@kdrive.fr</h5>
+            <p>Pour toutes questions, contactez-nous via le formulaire</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-8">
+        <form class="form-area contact-form text-right" id="myForm" [formGroup]="contactForm">
+          <div class="row">
+            <div class="col-lg-6 form-group">
+              <input type="text" name="name" placeholder="Nom" class="common-input mb-20 form-control"
+                formControlName="name" required>
+              <input type="email" name="email" placeholder="Email" class="common-input mb-20 form-control"
+                formControlName="email" required>
+              <input type="text" name="subject" placeholder="Objet du message" class="common-input mb-20 form-control"
+                formControlName="subject" required>
+            </div>
+            <div class="col-lg-6 form-group">
+              <textarea class="common-textarea form-control" name="message" placeholder="Message"
+                formControlName="message" required></textarea>
+            </div>
+            <div class="col-lg-12">
+              <div class="alert-msg" style="text-align: left;"></div>
+              <button class="genric-btn primary" style="float: right;" [disabled]="!contactForm.valid" (click)="sendMessage()">Envoyer le
+                Message</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End contact-page Area -->

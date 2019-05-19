@@ -1,0 +1,132 @@
+h1,
+h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: black;
+}
+
+h4:hover {
+  text-decoration: none;
+}
+
+p {
+  color: #777777;
+  font-weight: 300;
+}
+
+.text-uppercase {
+  color: #f9d700;
+}
+
+.home-about-area .about-right h4 {
+  font-size: 18px !important;
+  padding: 20px 0px !important;
+  font-weight: 300 !important;
+}
+
+.header-right .btn-lg {
+  width: 100%;
+  font-size: 14px;
+  color: #fff !important;
+  background-color: #000000;
+}
+
+.banner-content h1 {
+  font-size: 60px !important;
+  font-weight: 600 !important;
+  line-height: 1em !important;
+  margin-top: 10px !important;
+  color: #f9d700 !important;
+}
+
+.banner-content h6 {
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  text-transform: uppercase;
+  letter-spacing: 2px !important;
+}
+
+.banner-content .primary-btn {
+  background-color: #f9d700;
+  color: #222;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.reviews-area .single-review:hover h4 {
+  color: #f9d700 !important;
+}
+
+.services-area .single-service:hover h4,
+.services-area .single-service:hover .lnr {
+  color: #f9d700 !important;
+}
+
+.section-title {
+  text-align: center;
+  display: block !important;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 80px;
+}
+
+.section-gap {
+  padding: 50px 0;
+}
+
+.section-avis {
+  padding: 120px 0;
+}
+
+.ngx-datepicker-calendar-container .ngx-datepicker-position-bottom-right {
+  z-index: 10 !important;
+}
+
+.header-right {
+  background-color: #f9d700;
+  padding: 50px;
+  text-align: center;
+}
+
+.home-calltoaction-area p {
+  margin-bottom: 0px;
+  margin-top: 20px;
+  color: #222 !important;
+}
+
+@media (max-width: 480px) {
+  .header-right {
+    z-index: 10;
+    padding: 20px;
+  }
+
+  .about-left {
+    visibility: hidden;
+  }
+
+  .about-right {
+    text-align: center;
+  }
+
+  .banner-content {
+    padding-top: 150px;
+    text-align: center;
+  }
+
+  .banner-content h1 {
+    font-size: 32px !important;
+  }
+
+  .section-avis {
+    text-align: center;
+
+    .btn-left {
+      text-align: center;
+    }
+  }
+
+  .services-area .single-service {
+    margin: 1em 1em 0;
+  }
+}

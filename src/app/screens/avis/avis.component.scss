@@ -1,0 +1,17 @@
+.common-input {
+  border: 1px solid #ced4da !important;
+}
+
+.header-right {
+  background-color: #f9d700;
+  padding: 35px;
+  border: none;
+  text-align: center;
+  margin: 0 auto;
+}
+
+@media (max-width: 480px) {
+  .header-right {
+    margin: 15px;
+  }
+}
