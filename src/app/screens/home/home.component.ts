@@ -26,8 +26,7 @@ export class HomeComponent implements OnInit {
       'width': '100%'
     }
   };
-  constructor() {
-  }
+  constructor() { }
 
   ngOnInit() {
     //------- Niceselect  js --------//  
@@ -37,10 +36,6 @@ export class HomeComponent implements OnInit {
     if (document.getElementById("default-select2")) {
       $('select').niceSelect();
     };
-
-    //------- Datepicker  js --------//  
-
-    // $('[data-toggle="datepicker"]').datepicker();
   }
 
 }

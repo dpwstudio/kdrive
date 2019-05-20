@@ -11,8 +11,8 @@ import { FooterComponent } from './layouts/footer/footer.component';
 import { HomeComponent } from './screens/home/home.component';
 import { ContactComponent } from './screens/contact/contact.component';
 import { KdriveComponent } from './screens/kdrive/kdrive.component';
-import { AvisComponent } from './screens/avis/avis.component';
-import { DevisComponent } from './screens/devis/devis.component';
+import { TermsComponent } from './screens/terms/terms.component';
+import { ResaFormComponent } from './components/resa-form/resa-form.component';
 
 @NgModule({
   declarations: [
@@ -22,8 +22,8 @@ import { DevisComponent } from './screens/devis/devis.component';
     HomeComponent,
     ContactComponent,
     KdriveComponent,
-    AvisComponent,
-    DevisComponent,
+    TermsComponent,
+    ResaFormComponent,
   ],
   imports: [
     BrowserModule,

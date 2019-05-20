@@ -7,11 +7,11 @@ import 'jquery-nice-select';
 declare var $: any;
 
 @Component({
-  selector: 'app-devis',
-  templateUrl: './devis.component.html',
-  styleUrls: ['./devis.component.scss']
+  selector: 'app-resa-form',
+  templateUrl: './resa-form.component.html',
+  styleUrls: ['./resa-form.component.scss']
 })
-export class DevisComponent implements OnInit {
+export class ResaFormComponent implements OnInit {
   date: Date;
   options: DatepickerOptions = {
     locale: frLocale,
@@ -20,18 +20,17 @@ export class DevisComponent implements OnInit {
     dayNamesFormat: 'dd',
     displayFormat: 'DD/MM/YYYY',
     barTitleFormat: 'DD/MM/YYYY',
-    useEmptyBarTitle: false,
+    barTitleIfEmpty: 'Sélectionner une date',
     placeholder: 'Quand ?',
     addStyle: {
       'width': '100%'
     }
   };
-  constructor() {
-  }
+  constructor() { }
 
   ngOnInit() {
-     //------- Niceselect  js --------//  
-     if (document.getElementById("default-select")) {
+    //------- Niceselect  js --------//  
+    if (document.getElementById("default-select")) {
       $('select').niceSelect();
     };
     if (document.getElementById("default-select2")) {

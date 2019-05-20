@@ -1,35 +1,4 @@
-h1,
-h4 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  color: black;
-}
-
-h4:hover {
-  text-decoration: none;
-}
-
-p {
-  color: #777777;
-  font-weight: 300;
-}
-
-.text-uppercase {
-  color: #f9d700;
-}
-
-.home-about-area .about-right h4 {
-  font-size: 18px !important;
-  padding: 20px 0px !important;
-  font-weight: 300 !important;
-}
-
-.header-right .btn-lg {
-  width: 100%;
-  font-size: 14px;
-  color: #fff !important;
-  background-color: #000000;
-}
+/** BANNER **/
 
 .banner-content h1 {
   font-size: 60px !important;
@@ -54,10 +23,9 @@ p {
   text-transform: uppercase;
 }
 
-.reviews-area .single-review:hover h4 {
-  color: #f9d700 !important;
-}
+/** END BANNER **/
 
+/** SERVICES **/
 .services-area .single-service:hover h4,
 .services-area .single-service:hover .lnr {
   color: #f9d700 !important;
@@ -70,24 +38,40 @@ p {
   margin-right: auto;
   margin-bottom: 80px;
 }
+/** END SERVICES **/
 
-.section-gap {
-  padding: 50px 0;
-}
-
-.section-avis {
-  padding: 120px 0;
-}
-
+/** FORM RESA **/
 .ngx-datepicker-calendar-container .ngx-datepicker-position-bottom-right {
   z-index: 10 !important;
 }
 
 .header-right {
   background-color: #f9d700;
-  padding: 50px;
+  padding: 40px;
   text-align: center;
 }
+
+.header-right .btn-lg {
+  width: 100%;
+  font-size: 14px;
+  color: #fff !important;
+  background-color: #000000;
+}
+
+/** END FORM RESA **/
+
+/** ABOUT AREA **/
+.section-gap {
+  padding: 50px 0;
+}
+
+.home-about-area .about-right h4 {
+  font-size: 18px !important;
+  padding: 20px 0px !important;
+  font-weight: 300 !important;
+}
+
+/** END ABOUT AREA **/
 
 .home-calltoaction-area p {
   margin-bottom: 0px;
