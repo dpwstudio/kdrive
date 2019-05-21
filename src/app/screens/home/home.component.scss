@@ -21,6 +21,7 @@
   font-size: 14px;
   text-transform: uppercase;
 }
+
 /** END BANNER **/
 
 /** SERVICES **/
@@ -36,6 +37,7 @@
   margin-right: auto;
   margin-bottom: 80px;
 }
+
 /** END SERVICES **/
 
 /** FORM RESA **/
@@ -55,6 +57,7 @@
   color: #fff !important;
   background-color: #000000;
 }
+
 /** END FORM RESA **/
 
 /** ABOUT AREA **/
@@ -67,7 +70,25 @@
   padding: 20px 0px !important;
   font-weight: 300 !important;
 }
+
 /** END ABOUT AREA **/
+
+.overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.section-gap {
+  padding: 120px 0;
+}
+
+.home-calltoaction-area {
+  background: url(../../../assets/img/call-action-bg.jpg) center;
+  background-size: cover;
+}
 
 .home-calltoaction-area p {
   margin-bottom: 0px;
