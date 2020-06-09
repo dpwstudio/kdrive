@@ -1,4 +1,28 @@
 app-resa-form {
-    width: 380px;
+  width: 380px;
 }
 
+.form-group {
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.form-control {
+  font-size: 13px;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: .5rem;
+  color: black;
+  text-align: left;
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.btn-default {
+    letter-spacing: 2px;
+    font-size: 16px;
+}

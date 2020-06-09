@@ -20,6 +20,7 @@
   font-weight: 600;
   font-size: 14px;
   text-transform: uppercase;
+  border-radius: 5px;
 }
 
 /** END BANNER **/
@@ -47,8 +48,14 @@
 
 .header-right {
   background-color: #f9d700;
-  padding: 40px;
+  padding: 30px;
   text-align: center;
+  border-radius: 10px;
+
+  .title-form {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
 }
 
 .header-right .btn-lg {

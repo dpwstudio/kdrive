@@ -1,34 +1,31 @@
-<form class="form" [formGroup]="resaForm">
+<form class="form" [formGroup]="resaForm" (ngSubmit)="onSubmit()">
   <div class="form-group">
     <input class="form-control txt-field" type="text" name="name" placeholder="Nom" formControlName="name" required>
-    <input class="form-control txt-field" type="email" name="email" placeholder="Email" formControlName="email" required>
-    <input class="form-control txt-field" type="tel" name="phone" placeholder="Téléphone" formControlName="phone" required>
+    <input class="form-control txt-field" type="email" name="email" placeholder="Email" formControlName="email"
+      required>
+    <input class="form-control txt-field" type="tel" name="phone" placeholder="Téléphone" formControlName="phone"
+      required>
   </div>
   <div class="form-group">
+    <label>D'ou partez-vous ?</label>
     <div class="default-select" id="default-select">
-      <select>
-        <option value="" disabled selected hidden>D'où partez vous ?</option>
-        <option value="1">Paris</option>
-        <option value="2">La Défense</option>
-        <option value="3">Roissy</option>
-        <option value="4">Orly</option>
+      <select nice-select (change)="onChangeFrom($event)" formControlName="from" [value]="selectedValue">
+        <option *ngFor="let city of cities" [ngValue]="city">{{city}}</option>
       </select>
     </div>
   </div>
   <div class="form-group">
+    <label>Où allez-vous ?</label>
     <div class="default-select" id="default-select2">
-      <select id="city">
-        <option value="" disabled selected hidden>Où allez vous ?</option>
-        <option value="1">Paris</option>
-        <option value="2">La Défense</option>
-        <option value="3">Roissy</option>
-        <option value="4">Orly</option>
+      <select nice-select (change)="onChangeTo($event)" formControlName="to">
+        <option *ngFor="let city of cities" [ngValue]="city">{{city}}</option>
       </select>
     </div>
   </div>
   <div class="form-group">
     <div class="input-group dates-wrap">
-      <ng-datepicker class="dates form-control" name="date" [(ngModel)]="date" [options]="options" formControlName="date" required>
+      <ng-datepicker class="dates form-control" name="date" [(ngModel)]="date" [options]="options"
+        formControlName="date" required>
       </ng-datepicker>
       <div class="input-group-prepend">
         <span class="input-group-text"><span class="lnr lnr-calendar-full"></span></span>
@@ -36,15 +33,16 @@
     </div>
   </div>
   <div class="form-group">
-    <input class="form-control txt-field" type="text" name="hour" placeholder="A quelle heure ?" formControlName="hour" required>
+    <input class="form-control txt-field" type="text" name="hour" placeholder="A quelle heure ?" formControlName="hour"
+      required>
   </div>
   <div class="form-group">
-    <textarea class="form-control txt-field" name="description" id="" cols="10" rows="3"
-      placeholder="Détails" formControlName="description" required></textarea>
+    <textarea class="form-control txt-field" name="description" id="" cols="10" rows="3" placeholder="Détails"
+      formControlName="description" required></textarea>
   </div>
   <div class="form-group">
 
-    <button class="btn btn-default btn-lg btn-block text-center text-uppercase">Réserver un Taxi KDrive</button>
+    <button class="btn btn-default btn-lg btn-block text-center text-uppercase">Commander</button>
 
   </div>
 </form>

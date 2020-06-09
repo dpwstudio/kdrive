@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-
+@import '~jquery-nice-select/css/nice-select';
 /* =================================== */
 /*  Basic Style 
 /* =================================== */
@@ -1331,6 +1331,7 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: none;
   width: 100%;
   padding: 10px 0 10px 0px;
+  box-shadow: 0px 5px 10px 0px #00000036;
 }
 
 .default-select .nice-select .list .option {
@@ -1341,7 +1342,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.3s ease 0s;
   line-height: 28px;
   min-height: 28px;
-  font-size: 12px;
+  font-size: 14px;
   padding-left: 20px;
 }
 
@@ -1358,7 +1359,7 @@ h1, h2, h3, h4, h5, h6 {
 .default-select .current {
   margin-right: 50px;
   font-weight: 300;
-  color: white;
+  color: #000;
 }
 
 .default-select .nice-select::after {
@@ -1967,13 +1968,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 .header-right .default-select .nice-select {
   width: 100%;
   border-radius: .25rem;
-  background-color: #000000;
+  background-color: #fff;
 }
 
 .header-right .form-control {
   font-size: 14px;
   padding: 0.575rem 0.75rem;
-  background-color: #000000;
+  background-color: #fff;
   border: none;
 }
 
@@ -1987,13 +1988,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .header-right .input-group-prepend span {
   color: #fff;
-  background-color: #000000;
-  border-color: #000000;
+  background-color: #dcc000;
+  border-color: #dcc000;
 }
 
 .header-right .txt-field {
   margin-bottom: 1rem;
-  color: white;
+  color: #000;
 }
 
 .header-right .lnr {
@@ -2021,7 +2022,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   width: 100%;
   font-size: 14px;
   color: #fff;
-  background-color: #000000;
+  background-color: #dcbf00;
 }
 
 @media (max-width: 480px) {
@@ -2086,6 +2087,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .home-about-area .about-right .primary-btn {
   color: #222;
   border: 1px solid transparent;
+  border-radius: 5px;
 }
 
 .home-about-area .about-right .primary-btn:hover {
@@ -2202,6 +2204,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .home-calltoaction-area .primary-btn {
   text-transform: uppercase !important;
   background-color: #222;
+  border-radius: 5px;
 }
 
 .home-calltoaction-area .primary-btn:hover {
