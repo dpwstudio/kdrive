@@ -9,6 +9,8 @@ import { DatepickerOptions } from "ng2-datepicker";
 import * as enLocale from "date-fns/locale/en";
 import * as frLocale from "date-fns/locale/fr";
 import { HttpClient } from "@angular/common/http";
+import { NotifierService } from "angular-notifier";
+import { Router } from "@angular/router";
 
 @Component({
   selector: "app-resa-form",
@@ -16,6 +18,7 @@ import { HttpClient } from "@angular/common/http";
   styleUrls: ["./resa-form.component.scss"],
 })
 export class ResaFormComponent implements OnInit {
+  private notifier: NotifierService;
   resaForm: FormGroup;
   resa = {
     name: "",
@@ -40,22 +43,24 @@ export class ResaFormComponent implements OnInit {
     addStyle: {
       width: "100%",
       color: "#000",
-      fontSize: "13px"
+      fontSize: "13px",
     },
   };
-  endpoint: string = "http://localhost:4200/sendmail.php";
+  endpoint: string = "http://localhost:8888/createOrder.php";
   showMsg: boolean;
   showDanger: boolean;
   cities: any;
-  selectedValue: string;
-  selectedValueTo: string;
+  loading = false;
 
-  constructor(private http: HttpClient) {}
+  constructor(
+    private http: HttpClient,
+    notifierService: NotifierService,
+    private router: Router
+  ) {
+    this.notifier = notifierService;
+  }
 
   ngOnInit() {
-    this.selectedValue = "D'où partez-vous ?";
-    this.selectedValueTo = "Où allez-vous ?";
-
     this.cities = ["Paris", "La Défense", "Roissy", "Orly"];
 
     this.resaForm = new FormGroup({
@@ -90,20 +95,34 @@ export class ResaFormComponent implements OnInit {
   }
 
   onSubmit() {
-    console.log("Your form data : ", this.resaForm.value);
-    if (this.resaForm.value.email) {
-      this.sendMail(JSON.stringify(this.resaForm.value));
-      this.showMsg = true;
-      this.resaForm.reset();
-      console.log('this.date', this.resaForm.value.date);
+    this.loading = true;
+
+    // stop here if form is invalid
+    if (this.resaForm.invalid) {
+      this.notifier.notify(
+        "error",
+        "Attention ! Veuillez compléter tous les champs."
+      );
+      this.loading = false;
+      return;
     } else {
-      this.showDanger = true;
+      setTimeout(() => {
+        this.sendMail(JSON.stringify(this.resaForm.value));
+        this.notifier.notify(
+          "success",
+          "En route ! Votre demande a bien été prise en compte."
+        );
+        this.loading = false;
+        this.resaForm.reset();
+      }, 1500);
     }
   }
 
   sendMail(email: any) {
     if (this.resaForm.valid) {
-      this.http.post(this.endpoint, email);
+      this.http
+        .post(this.endpoint, email)
+        .subscribe((res) => console.log("res", res));
     }
   }
 }

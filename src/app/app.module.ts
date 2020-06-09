@@ -15,6 +15,8 @@ import { KdriveComponent } from './screens/kdrive/kdrive.component';
 import { TermsComponent } from './screens/terms/terms.component';
 import { ResaFormComponent } from './components/resa-form/resa-form.component';
 import { HttpClientModule } from '@angular/common/http';
+import { NotifierModule } from 'angular-notifier';
+import { customNotifierOptions } from "./configNotifier";
 
 @NgModule({
   declarations: [
@@ -34,7 +36,8 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     NgDatepickerModule,
     NiceSelectModule,
-    HttpClientModule
+    HttpClientModule,
+    NotifierModule.withConfig(customNotifierOptions),
   ],
   providers: [FormsModule],
   bootstrap: [AppComponent]

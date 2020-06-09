@@ -1,6 +1,10 @@
+<div class="position-absolute loading-form" *ngIf="loading">
+  <img src="assets/img/spinner.png" width="50" alt="" style="margin-right: 10px;">
+  <span>En cours d'envoi...</span>
+</div>
 <form class="form" [formGroup]="resaForm" (ngSubmit)="onSubmit()">
   <div class="form-group">
-    <input class="form-control txt-field" type="text" name="name" placeholder="Nom" formControlName="name" required>
+    <input class="form-control txt-field" type="text" name="name" placeholder="Nom, Prénom" formControlName="name" required>
     <input class="form-control txt-field" type="email" name="email" placeholder="Email" formControlName="email"
       required>
     <input class="form-control txt-field" type="tel" name="phone" placeholder="Téléphone" formControlName="phone"

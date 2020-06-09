@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~jquery-nice-select/css/nice-select';
+@import "~angular-notifier/styles";
 /* =================================== */
 /*  Basic Style 
 /* =================================== */
@@ -48,7 +49,7 @@
 
 body {
   color: #777777 !important;
-  font-family: "Poppins", sans-serif !important;
+  font-family: "Montserrat", sans-serif !important;
   font-size: 14px !important;
   font-weight: 300 !important;
   line-height: 1.625em;
@@ -115,7 +116,7 @@ a, a:focus, a:hover {
 
 h1, h2, h3,
 h4, h5, h6 {
-  font-family: "Poppins", sans-serif !important;
+  font-family: "Montserrat", sans-serif !important;
   color: #222222 !important;
   line-height: 1.2em !important;
   margin-bottom: 0;
@@ -127,7 +128,7 @@ h4, h5, h6 {
 .h4, .h5, .h6 {
   margin-bottom: 0;
   margin-top: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   color: #222222;
 }
@@ -796,7 +797,7 @@ input {
 /* =================================== */
 /*
 
-$primary-font	: 'Poppins', sans-serif;
+$primary-font	: 'Montserrat', sans-serif;
 ---------------------------------------------
 
 $primary-color	: #f9d700;
@@ -1610,7 +1611,7 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-block;
   color: #fff;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 15px;
   text-transform: uppercase;
   outline: none;
 }
@@ -1653,7 +1654,7 @@ h1, h2, h3, h4, h5, h6 {
   position: fixed;
   right: 15px;
   z-index: 999;
-  top: 16px;
+  top: 23px;
   border: 0;
   background: none;
   font-size: 24px;
